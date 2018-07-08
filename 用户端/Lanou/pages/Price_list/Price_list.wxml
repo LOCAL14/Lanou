@@ -1,0 +1,62 @@
+<view class='bac'>
+  <view class='view'>
+    <view class='list'>
+      <block wx:for="{{list}}" wx:for-item="item">
+        <view class='fix_all' style='opacity:{{activeIndex == index ?1:0}}'>
+        </view>
+        <view data-id="{{index}}" class="list_all {{activeIndex == index?'list_active':'list_notactive'}}" bindtap='changelist'>
+          {{item.name}}
+        </view>
+      </block>
+    </view>
+
+
+
+
+    <view class='price'>
+      <view class='price_bac' style="border-top-left-radius:{{activeIndex == 0?'0':'6px'}}">
+        恭喜你发现了这个根本不可能被触发的bug
+      </view>
+
+      <view class='price_all' style="z-index: 20;border-top-left-radius:{{activeIndex == 0?'0':'6px'}}">
+        <text class='icon_loading iconfont icon-loading' />
+        <text style='margin: 0 auto'>loading...</text>
+      </view>
+
+      <view class='price_all' style='z-index:50'>
+        <scroll-view scroll-y class='scroll' style='height: {{height}}px' enable-back-to-top="true">
+          <view class='frame'>
+
+            <block wx:for="{{list[activeIndex].goods}}" wx:for-item="item">
+
+              <block wx:if="{{index%2 == 0}}">
+                <view class='frame_ph left' data-id="{{index}}">
+                  <view class='ph_all'>
+                    <image src='{{item[1]}}' lazy-load="true" mode='aspectFill' />
+                  </view>
+                  <view class="text-container">
+                    <text>{{item[0]}}</text>
+                    <text>{{item[2]}}</text>
+                  </view>
+                </view>
+              </block>
+
+              <block wx:if="{{index%2 != 0}}">
+                <view class='frame_ph right' data-id="{{index}}">
+                  <view class='ph_all'>
+                    <image src='{{item[1]}}' lazy-load="true" mode='aspectFill' />
+                  </view>
+                  <view class="text-container">
+                    <text>{{item[0]}}</text>
+                    <text>{{item[2]}}</text>
+                  </view>
+                </view>
+              </block>
+              
+            </block>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

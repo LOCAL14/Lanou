@@ -1,0 +1,24 @@
+<!--pages/lanou/lanou.wxml-->
+<view class='bac'>
+  <view class='box'>
+   <text class='que_icon iconfont icon-iconfontquestion-copy'></text>
+    <text class='wenti'>常见问题汇总</text>
+    <text class='font_all'>1.订单信息填写有误怎么办</text>
+    <text class='font_all grey'>在下单一分钟内，您可取消订单之后重新下单。若超出一分钟，请联系此订单的回收员更改地址。</text>
+    <text class='font_all'>2.提现失败怎么办？</text>
+    <text class='font_all grey'>别担心，我们的工作人员会在1-2个工作日内致电您。</text>
+    <text class='font_all'>3.我认为回收员的秤不准怎么办？</text>
+    <text class='font_all grey'>请您在回收-历史订单-订单详情中投诉此订单，在3-5个工作日内我们的工作人员会致电您。</text>
+    <text class='font_all'>4.什么是PVC，PE，PP？如何区分？</text>
+    <text class='font_all grey'>PVC，PE，PP是塑料的种类。可依照塑料瓶底部的回收标志区分。
+    </text>
+    <view class='yiwen_icon'> <text class='que_1_icon iconfont icon-iconfontquestion-copy'></text></view>
+    <view class='font_all yiwen'>仍有疑问？</view>
+    <view  id='tel' type='tel' class='tel'>
+     <view class='tel_icon'>
+       <text class='que_2_icon iconfont icon-msnui-telephone'></text>
+       </view>
+    <view id='tel_1' class='tel_1'>拨打客服中心电话：400-2333-2333</view>
+    </view>
+  </view>
+</view>

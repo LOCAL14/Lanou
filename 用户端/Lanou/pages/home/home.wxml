@@ -1,0 +1,170 @@
+<!--pages/home/home.wxml-->
+
+
+
+
+<!--   page_home    -->
+
+<view class='home' style='z-index:{{home_z}}'>
+  <view class='container' style='filter:{{home_blur}};transition: filter 500ms;opacity:{{home_op}}'>
+    <swiper id='ad' class='adver' indicator-active-color='#2dcb70' indicator-dots="{{indicatorDots}}" duration="{{duration}}" autoplay='true' >
+      <view wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" mode='aspectFill'/>
+        </swiper-item>
+      </view>
+    </swiper>
+
+    <view class='news left'>
+      <view id='news_ph_1' class='news_ph'>
+        <image src='{{url1}}' mode='aspectFill'/>
+      </view>
+      <text id='news_text_1'>{{unitprice1}}</text>
+    </view>
+
+    <view class='newmiddle'>
+      <view class='news middle'>
+        <view id='news_ph_2' class='news_ph'>
+          <image src='{{url2}}' mode='aspectFill'/>
+        </view>
+        <text id='news_text_2'>{{unitprice2}}</text>
+      </view>
+    </view>
+
+    <view class='news right'>
+      <view id='news_ph_3' class='news_ph'>
+        <image src='{{url3}}' mode='aspectFill'/>
+      </view>
+      <text id='news_text_3'>{{unitprice3}}</text>
+    </view>
+
+    <view id='bill' class='button' bindtap='rank_list'>
+      <icon class="icon icc iconfont icon-msnui-bar-chart"/>
+      <text class='text'>排行榜</text>
+      <text class='icon_right iconfont icon-you'/>
+    </view>
+
+    <view id='bill' class='button' bindtap='price_list'>
+      <icon class="icon icc iconfont icon-liebiao"/>
+      <text class='text'>价目表</text>
+      <text class='icon_right iconfont icon-you'/>
+    </view>
+
+    <view id='helpcenter' class='button' bindtap='helpcenter'>
+      <text class='icon iconfont icon-wenhao'/>
+      <text class='text'>帮助中心</text>
+      <text class='icon_right iconfont icon-you'/>
+    </view>
+  </view>
+</view>
+
+<!--   /page_home    -->
+
+
+
+
+
+<!--   page_recircle    -->
+
+<view class='div' style='z-index:{{recircle_z}}'>
+  <view class='lao-his loading_left' style='opacity:{{recircle_op}};transition: opacity 400ms'  bindtap='ordering'>
+    <text class='icon_loading iconfont icon-59'/>
+    <text class='word_loading'>进行中</text>
+  </view>
+
+  <view class='wanna' style='opacity:{{recircle_op}};transition: opacity 400ms' bindtap='order'>
+    <text class='icon_wanna iconfont icon-add'/>
+    <text class='word_loading word_wanna'>我要下单</text>
+  </view>
+
+  <view class='lao-his history_right' style='opacity:{{recircle_op}};transition: opacity 400ms' bindtap='historyorder'>
+    <text class='icon_history iconfont icon-liebiao'/>
+    <text class='word_loading word_his'>历史订单</text>
+  </view>
+</view>  
+
+<!--   /page_recircle    -->
+
+
+
+
+
+<!--   page_me    -->
+
+<view class='me' style='z-index:{{me_z}};filter:{{me_blur}};transition: filter 500ms'>
+  <view class='me_con'>
+      <view class='me_pic'>
+        <image class='mode_p' src='{{avatorUrl}}'/>
+      </view>
+      <view class='me_text'>
+          <text class='u_font'>{{name}}</text>
+          <text class='u_num'>{{phonenumber}}</text> 
+      </view>
+  </view>
+  <view class='button_all' bindtap='wallet'>
+    <text class='icon_left iconfont icon-ai-wallet'/>
+    <text class='me_icon_text' style='margin: auto auto auto -220rpx'>钱包</text>
+    <text class='icon_right iconfont icon-you'/>
+  </view>
+  <view class='button_all' bindtap='changeaddress'>
+    <text class='icon_map iconfont icon-locationfill'/>
+    <text class='me_icon_text' style='margin: auto auto auto -188rpx'>我的地址</text>
+    <text class='icon_right iconfont icon-you'/>
+  </view>
+  <view class='button_all' bindtap='change_phone'>
+    <text class='icon_phone iconfont icon-31baocundaozhuomian'/>
+    <text class='me_icon_text' style='margin: auto auto auto -172rpx'>更换手机号</text>
+    <text class='icon_right iconfont icon-you'/>
+  </view>
+
+  <view class='s_box'> 
+    <view class='switch s_left'>
+      <view class='sw left'>
+        <text class='icon_sw iconfont icon-shoucang' style='float: left;margin: 8rpx 0 0 16rpx'/>
+        <text class='sw_text left' style='margin: 18rpx 0 0 8rpx'>VIP2</text>
+      </view>
+      <view class='sw right' style='text-align: right'>
+        <text class='icon_sw iconfont icon-selection' style='float: right;margin: 10rpx 13rpx 0 0'/>
+        <text class='sw_text right' style='margin: 18rpx 7rpx 0 0'>信誉优秀</text>
+      </view>
+    </view>
+  </view> 
+</view>
+
+
+
+<!--   /page_me    -->
+
+
+
+
+
+
+
+<!--   Bar   -->
+
+    <view class='bar_home-me bar_home_left' bindtap='home_index'>
+      <text class='home_icon iconfont icon-home_fill_light' style='color:{{home_color}};'/>
+      <text class='bar_word home_word' style='color:{{home_color}};'>主页</text>
+    </view>
+
+    <view class='bar'>
+      <view class='ball' bindtap='recircle_index'>
+        <view class='sec_ball' style='background-color:{{sec_ball_color}}'>
+          <text class='recicle iconfont icon-huishou' style='color:{{recircle_color}}'/>
+        </view>
+      </view> 
+    </view>
+
+    <view class='bar_home-me bar_me_right' bindtap='me_index'>
+      <text class='me_icon iconfont icon-wode2' style='color:{{me_color}}'/>
+      <text class='bar_word' style='color:{{me_color}}'>我</text>
+    </view>
+
+    <view class='thi_ball'>
+    
+    </view>
+
+<!--   /Bar    -->
+  
+

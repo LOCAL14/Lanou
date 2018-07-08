@@ -1,0 +1,282 @@
+.bac {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 750rpx;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.que_icon {
+  position: absolute;
+  z-index: 1;
+  height: 40rpx;
+  width: 40rpx;
+  margin: 30rpx 10rpx 0 0;
+  display: block;
+  float: left;
+  color: orange;
+}
+
+.que_1_icon {
+  position: absolute;
+  /* z-index: -1; */
+  height: 30rpx;
+  width: 30rpx;
+  margin: 30rpx 10rpx 0 0;
+  display: block;
+  float: left;
+  color: orange;
+}
+
+.xing_1 {
+  display: inline-block;
+  height: 30rpx;
+  width: 30rpx;
+  margin: 0 10rpx;
+}
+
+.xing_2 {
+  display: inline-block;
+  height: 30rpx;
+  width: 30rpx;
+  margin: 0 10rpx;
+}
+
+.xing_3 {
+  display: inline-block;
+  height: 30rpx;
+  width: 30rpx;
+  margin: 0 10rpx;
+}
+
+.xing_4 {
+  display: inline-block;
+  height: 30rpx;
+  width: 30rpx;
+  margin: 0 10rpx;
+}
+
+.xing_5 {
+  display: inline-block;
+  height: 30rpx;
+  width: 30rpx;
+  margin: 0 10rpx;
+}
+
+.ord_1 {
+  z-index: 1;
+  height: 200rpx;
+  width: 90%;
+  margin: 80rpx 10rpx 10rpx 10rpx;
+  padding: 20rpx 0 0 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.ord_2 {
+  z-index: 1;
+  height: 200rpx;
+  margin: 20rpx 10rpx 10rpx 10rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.pho_2 {
+  z-index: 1;
+  height: 180rpx;
+  width: 180rpx;
+  float: left;
+  margin: 5rpx 0 0 10rpx;
+  border-radius: 10rpx;
+  background-color: grey;
+  display: block;
+}
+
+.i_1 {
+  height: 45rpx;
+  z-index: 1;
+  display: inline-block;
+  width: 380rpx;
+  float: left;
+}
+
+.i_2 {
+  height: 45rpx;
+  z-index: 1;
+  display: inline-block;
+  width: 380rpx;
+  float: left;
+}
+
+.tim {
+  z-index: 1;
+  text-align: left;
+  font-size: 28rpx;
+  float: left;
+  display: block;
+  margin: 4rpx 0 0 4rpx;
+}
+
+.add {
+  z-index: 1;
+  margin: 5rpx 0 0 4rpx;
+  font-size: 28rpx;
+  text-align: left;
+  float: left;
+}
+
+.pri {
+  z-index: 1;
+  color: orange;
+  font-size: 40rpx;
+  text-align: right;
+}
+
+.blo_1 {
+  z-index: 1;
+  height: 180rpx;
+  width: 180rpx;
+  margin: 10rpx 0 0 10rpx;
+  float: left;
+}
+
+.blo_2 {
+  z-index: 1;
+  display: inline-block;
+  height: 180rpx;
+  width: 380rpx;
+  margin: 10rpx 0 0 20rpx;
+}
+
+.blo_3 {
+  z-index: 1;
+  display: inline-block;
+  height: 180rpx;
+  width: 380rpx;
+  float: left;
+}
+
+.blo_4 {
+  z-index: 1;
+  height: 90rpx;
+}
+
+.blo_5 {
+  z-index: 1;
+  display: inline-block;
+  height: 180rpx;
+  width: 140rpx;
+  float: right;
+  text-align: center;
+  /* margin-right:20rpx; */
+}
+
+.blo_6 {
+  z-index: 1;
+  height: 90rpx;
+}
+
+.xing {
+  z-index: 1;
+  height: 90rpx;
+  margin: 0;
+}
+
+.add_2 {
+  z-index: 1;
+  margin: 0 0 0 20rpx;
+  font-size: 28rpx;
+}
+
+.pri_2 {
+  z-index: 1;
+  color: #ff9800;
+  font-size: 30rpx;
+  margin: 8rpx 10rpx;
+  text-align: center;
+}
+
+.eva_1 {
+  z-index: 1;
+  color: white;
+  background-color: orange;
+  height: 60rpx;
+  width: 120rpx;
+  font-size: 28rpx;
+  float: right;
+  margin: 70rpx 15rpx 0 0;
+  padding: 0 0 15rpx 0;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.eva_2 {
+  z-index: 1;
+  color: #bbb;
+  background-color: white;
+  height: 60rpx;
+  width: 120rpx;
+  font-size: 28rpx;
+  float: right;
+  margin: 30rpx 15rpx 0 0;
+  padding: 0 0 15rpx 0;
+  text-align: center;
+  border-radius: 0px;
+  border: #bbb 1px solid;
+}
+
+.eva_3 {
+  z-index: 1;
+  color: white;
+  background-color: #bbb;
+  height: 60rpx;
+  width: 120rpx;
+  font-size: 28rpx;
+  float: right;
+  margin: 70rpx 15rpx 0 0;
+  padding: 0 0 15rpx 0;
+  text-align: center;
+  border-radius: 0px;
+  border: #bbb 1px solid;
+}
+
+image {
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 10rpx;
+}
+
+button::after {
+  border: 0px;
+}
+
+button {
+  border: #f5f5f5 1px solid;
+}
+
+/* 无历史订单时 */
+
+.page_inner {
+  padding: 15rpx;
+}
+
+.inner_one {
+  /* display: flex;
+  align-items: center;  */
+  text-align: center;
+  margin-top: 230rpx;
+}
+
+.inner_one_font {
+  height: 46rpx;
+  color: rgba(136, 136, 136, 1);
+  font-size: 29rpx;
+  font-family: Roboto;
+}
+
+#icon_one {
+  font-size: 35rpx;
+  color: rgba(136, 136, 136, 1);
+  padding-right: 25rpx;
+}

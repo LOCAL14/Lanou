@@ -1,0 +1,25 @@
+<!-- page/change_phone  -->
+<view class='bac'>
+  <view class='container'>
+    <text id='phone' class='phone'>您现在的手机号是{{phonenumber}}</text>
+    <view class='box'>
+      <view id='new' class='new'>
+        <input id='phonenum' type='number' placeholder='输入新手机号' maxlength='11' placeholder-style='font-size:15px;color:#707070' bindinput='phonenumberSubmit' disabled='{{input}}'/>
+      </view>
+      <view id='code' class='code'>
+        <input id='passnum' type='number' placeholder='验证码' maxlength='6' placeholder-style='font-size:15px;color:#707070' bindinput='codeSubmit'/>
+      </view> 
+      <view id='obt' class='obt' bindtap='getcode'>
+        {{button}}
+      </view> 
+    </view>
+    <view class='but' bindtap='changePhone'>
+      <text>确认修改</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+             

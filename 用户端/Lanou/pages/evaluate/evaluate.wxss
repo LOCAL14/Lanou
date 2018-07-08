@@ -1,0 +1,380 @@
+.bac {
+  position: absolute;
+  height: 100%;
+  width: 750rpx;
+  padding: 0;
+  text-align: center;
+  background-color: #eee;
+}
+
+.green {
+  width: 100%;
+  height: 80rpx;
+  background-color: #2dcb70;
+}
+
+.que_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  margin: 42rpx 18rpx;
+  color: grey;
+}
+
+.que_inp_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  margin: 42rpx 18rpx;
+  color: grey;
+}
+
+.que_1_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+  margin: 15rpx 0 15rpx 0;
+}
+
+.que_1_2_icon {
+  display: flex;
+  font-size: 60rpx;
+  float: left;
+  color: grey;
+  margin: 0 4rpx 4rpx 0;
+}
+
+.que_1_3_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+  margin: 0 0 15rpx 0;
+}
+
+.que_2_icon {
+  display: flex;
+  font-size: 37rpx;
+  float: left;
+  color: grey;
+  margin-left: 5rpx;
+}
+
+.que_3_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+}
+
+.address {
+  height: 130rpx;
+  background-color: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.add_1 {
+  display: inline-block;
+  height: 120rpx;
+  width: 80rpx;
+  float: left;
+  margin-left: 15rpx;
+}
+
+.add_2 {
+  display: inline-block;
+  height: 50rpx;
+  width: 500rpx;
+  float: left;
+  margin: 0 30rpx 0 0;
+  text-align: center;
+  padding: 10rpx 0 10rpx 25rpx;
+  font-size: 30rpx;
+}
+
+.add_3 {
+  display: inline-block;
+  height: 50rpx;
+  width: 500rpx;
+  margin: 0 30rpx 0 0;
+  float: left;
+  text-align: center;
+  padding: 10rpx 0 10rpx 25rpx;
+  font-size: 28rpx;
+}
+
+.message {
+  height: 290rpx;
+  background-color: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.mes_1 {
+  display: inline-block;
+  height: 200rpx;
+  width: 80rpx;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+  margin-left: 15rpx;
+}
+
+.mes_2 {
+  display: inline-block;
+  height: 50rpx;
+  width: 500rpx;
+  float: left;
+  text-align: left;
+  margin: 15rpx 0 0 0;
+  padding: 15rpx 0 0 25rpx;
+  font-size: 35rpx;
+}
+
+.mes_3 {
+  display: inline-block;
+  height: 55rpx;
+  width: 500rpx;
+  text-align: left;
+  float: left;
+  padding: 15rpx 0 0 25rpx;
+  font-size: 35rpx;
+}
+
+.mes_4 {
+  display: inline-block;
+  height: 55rpx;
+  width: 500rpx;
+  text-align: left;
+  float: left;
+  padding: 5rpx 0 0 25rpx;
+  font-size: 35rpx;
+}
+
+.mes_5 {
+  display: inline-block;
+  height: 55rpx;
+  width: 500rpx;
+  text-align: left;
+  float: left;
+  padding: 8rpx 0 0 28rpx;
+  font-size: 35rpx;
+  margin: 0 0 0 90rpx;
+  color: orange;
+}
+
+.mes_1_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin: 18rpx 18rpx;
+}
+
+.mes_2_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin: 2rpx 18rpx 18rpx 18rpx;
+}
+
+.mes_3_icon {
+  display: flex;
+  width: 65rpx;
+  height: 65rpx;
+  float: left;
+  margin: 5rpx 18rpx 10rpx 10rpx;
+}
+
+.mes_4_icon {
+  display: flex;
+  width: 55rpx;
+  height: 55rpx;
+  float: left;
+  margin: 5rpx 18rpx 18rpx 18rpx;
+}
+
+.name {
+  height: 130rpx;
+  background-color: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.nam_1 {
+  display: inline-block;
+  height: 120rpx;
+  width: 80rpx;
+  float: left;
+  margin-left: 15rpx;
+}
+.nam_3{
+  display: inline-block;
+  height: 120rpx;
+  width: 80rpx;
+  float: right;
+  margin-left: 15rpx;
+}
+
+.nam_2 {
+  display: inline-block;
+  height: 80rpx;
+  float: left;
+  text-align: left;
+  padding: 40rpx 0 0 25rpx;
+  font-size: 35rpx;
+}
+
+.nam_4 {
+  display: inline-block;
+  height: 120rpx;
+  width: 600rpx;
+  float: left;
+  text-align: left;
+  font-size: 28rpx;
+}
+
+.inp_1 {
+  display: inline-block;
+  height: 100rpx;
+  width: 60rpx;
+  float: left;
+  margin-left: 15rpx;
+}
+
+.xing {
+  position: absolute;
+  margin: 40rpx 25rpx;
+  height: 50rpx;
+  width: 350rpx;
+}
+
+.xing_1 {
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  display: block;
+  float: left;
+}
+
+.xing_2 {
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  display: block;
+  float: left;
+  margin-left: 70rpx;
+}
+
+.xing_3 {
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  display: block;
+  float: left;
+  margin-left: 140rpx;
+}
+
+.xing_4 {
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  display: block;
+  float: left;
+  margin-left: 210rpx;
+}
+
+.xing_5 {
+  position: absolute;
+  height: 50rpx;
+  width: 50rpx;
+  display: block;
+  float: left;
+  margin-left: 280rpx;
+}
+
+.xing_1_1_icon {
+  position: absolute;
+  z-index: 1;
+  font-size: 50rpx;
+  display: block;
+  float: left;
+  color: orange;
+}
+
+.xing_1_2_icon {
+  position: absolute;
+  z-index: -1;
+  font-size: 50rpx;
+  display: block;
+  float: left;
+  color: orange;
+}
+
+.determine {
+  height: 110rpx;
+  width: 94%;
+  background-color: orange;
+  border-radius: 10rpx;
+  margin: 20rpx 3%;
+}
+
+.det_icon {
+  display: inline-block;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  font-size: 45rpx;
+  margin: 35rpx 350rpx;
+  color: white;
+}
+.det_text {
+  font-size: 28rpx;
+  margin: 35rpx auto;
+  color: grey;
+}
+
+.input {
+  height: 340rpx;
+  background-color: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.input_1 {
+  display: -webkit-box;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  height: 180rpx;
+  width: 590rpx;
+  margin: 110rpx 0 0 0;
+  border: 1px solid #909090;
+  border-radius: 10rpx;
+  background-color: white;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  font-size: 32rpx;
+}
+.evaluate-text {
+  display: -webkit-box;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  height: 180rpx;
+  width: 590rpx;
+  margin: 110rpx 0 0 0;
+  background-color: white;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  font-size: 32rpx;
+}

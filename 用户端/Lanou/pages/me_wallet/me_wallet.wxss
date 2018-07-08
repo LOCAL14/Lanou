@@ -1,0 +1,153 @@
+ /* pages/me_wallet/me_wallet.wxss */
+page{
+  padding: 0rpx;
+  margin: 0rpx; 
+  background-color: rgba(245, 245, 245, 1);
+}
+/* view{
+  padding: 0rpx;
+  margin: 0rpx;
+} */
+ .body{
+  height: 100%;
+  line-height: 40rpx;
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  font-family: Roboto;
+  padding: 25rpx;
+} 
+.rounded_rect {
+  height: 464rpx;
+  line-height: 46rpx;
+  border-radius: 10rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  font-family: Roboto;
+  background: white;
+  padding: 30rpx;
+  padding-bottom: 5rpx;
+}
+.top_inner{
+  display: flex;
+  align-items: center;
+}
+.labela{
+  margin-left: 15rpx;
+  width: 58rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  font-family: Roboto;
+}
+.labelb_f{
+  text-align: center;
+   margin-top: 60rpx;
+}
+.labelb{
+  width: 248rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 96rpx;
+  font-family: Roboto;
+  margin: 0 auto;
+ 
+}
+.button{
+  width: 388rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  background-color: rgba(255, 152, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 32rpx;
+  font-family: Microsoft Yahei;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 50rpx;
+}
+.labelc_f{
+  text-align: center;
+  padding: 10rpx;
+  padding-top: 15rpx;
+}
+.labelc{
+  width: 58rpx;
+  height: 46rpx;
+  line-height: 34rpx;
+  color: rgba(136, 136, 136, 1);
+  font-size: 24rpx;
+  font-family: Roboto;
+  text-align: center;
+}
+button{
+  background: white;
+  border: 0px;
+}
+.the_second{
+  margin-top: 36rpx;
+}
+.second{
+  width: 678rpx;
+  height: 104rpx;
+  line-height: 40rpx;
+  border-radius: 10rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  font-family: Roboto;
+  background: white;
+}
+.second_button{
+   padding: 0 30rpx;
+}
+.second_inner{
+  width: 95%;  
+  height: 80%;
+  padding: 30rpx 0; 
+}
+.second_left{
+  display: flex;
+  align-items: center;
+  position: relative;
+  float: left;
+}
+.second_right{
+  position: relative;
+  float: right;
+}
+.second_labela{
+  width: 86rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  font-family: Roboto;
+}
+.second_labelb{
+  width: 46rpx;
+  height: 46rpx;
+  line-height: 40rpx;
+  color: rgba(16, 16, 16, 1);
+  font-size: 28rpx;
+  font-family: Roboto;
+}
+.second_labelc{
+  width: 48rpx;
+  height: 24rpx;
+  background-color: rgba(16, 16, 16, 1);
+}
+#icon1{
+  width: 50rpx;
+  height: 50rpx;
+  color: rgba(255, 152, 0, 1);
+}
+#icon2{
+  margin-right: 15rpx;
+  font-size: 40rpx;
+  color: rgba(45, 203, 112, 1); 
+}
+#icon3{
+  width: 24px;
+  height: 24px;
+}

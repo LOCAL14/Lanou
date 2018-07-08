@@ -1,0 +1,49 @@
+<!--pages/me_wallet_withdraw/me_wallet_withdraw.wxml-->
+<view class='allpage'>
+  <view class='inner'>
+    <view class='first_view'>
+      <view class='first_view_inner'>
+        <view class='first_view_left'>
+          <i class="iconfont icon-fl-renminbi" id="icon_one"></i>
+          提现金额
+        </view>
+        <view class='first_view_right' bindtap='putValue'>全部提现</view>
+      </view>
+      <view class='money_out'>
+        <view class='money'>
+          <view class='money_inner'>
+            <input type='digit' placeholder='请输入提现金额' bindblur='input' value='{{value}}'></input>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='second_view'>
+      <view class='account'>
+        <view class='account_inner_left'>
+          <i class="iconfont icon-weixin" id="icon_two" ></i>
+          请确认提现账户
+        </view>
+        <view class='account_inner_right'>
+          <i class="iconfont icon-iconfontquestion" id="icon_three"> </i>
+        </view>
+      </view>
+      <view>
+        <view class='head_photo'>
+          <view class='head_photo_left'>
+            <image class='avatar' src='{{wxuser_avatarUrl}}'>
+            </image>
+          </view>
+          <view class='head_photo_right'>{{wxuser_nickName}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='third_view'>
+      <view>
+        <button class='button_withdraw' bindtap='withdraw'>立即提现</button>
+      </view>
+    </view>
+    <view class='fourth_view'>
+      <label class='fourth_view_inner'>将在3-5个工作日内提现至账户的微信零钱中</label>
+    </view>
+  </view>
+</view>

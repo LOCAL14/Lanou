@@ -1,0 +1,100 @@
+<view class='bac'>
+  <view wx:if='{{!hasOrdering}}'>
+    <view class='page_inner'>
+      <view class='inner_one'>
+        <i class="iconfont icon-cry" id="icon_one"></i>
+        <label class='inner_one_font'>没有进行中的订单。</label>
+        <label class='inner_one_font' style='color:#2DCB70;text-decoration:underline' bindtap='navigatorToHistoryorder'>查看历史订单</label>
+      </view>
+    </view>
+  </view>
+  <block wx:if='{{hasOrdering && hasOrderData}}'>
+    <view class='green'>
+      <view class='address'>
+        <view class='add_1'>
+          <text class='que_icon iconfont icon-diqiu'></text>
+        </view>
+        <view id='add_2' class='add_2'>
+          <text>{{address}}</text>
+        </view>
+        <view id='add_3' class='add_3'>
+          <text decode='true'>{{contactInfo}}</text>
+        </view>
+      </view>
+      <view class='message'>
+        <view class='mes_1'>
+          <view class='mes_1_icon'>
+            <text class='que_1_icon iconfont icon-rili'></text>
+          </view>
+          <view class='mes_2_icon'>
+            <text class='que_1_icon iconfont icon-time'></text>
+          </view>
+          <view class='mes_3_icon'>
+            <text class='que_2_icon iconfont icon-fama'></text>
+          </view>
+        </view>
+        <view id='mes_2' class='mes_2'>
+          <text>{{date}}</text>
+        </view>
+        <view id='mes_3' class='mes_3'>
+          <text>{{time}}
+           </text>
+        </view>
+        <view id='mes_5' class='mes_5'>
+          <text>{{evaluateWeight}}
+           </text>
+        </view>
+      </view>
+      <view class='name'>
+        <view class='nam_1'>
+          <view class='que_icon'>
+            <text class='que_1_icon iconfont icon-wode2'></text>
+          </view>
+        </view>
+        <view id='nam_2' class='nam_2'>
+          <text>{{collectorName}}</text>
+        </view>
+        <view class='nam_3'>
+          <view class='nam_icon' bindtap='callCollector'>
+            <text class='rig_icon iconfont icon-msnui-telephone'></text>
+          </view>
+        </view>
+      </view>
+      <view class='name'>
+        <view class='nam_1'>
+          <view class='que_icon'>
+            <text class='que_1_icon iconfont icon-pingjia'></text>
+          </view>
+        </view>
+        <view id='wor_2' class='nam_4'>
+          <text class='input'>{{remarks}}</text>
+        </view>
+
+      </view>
+      <view class='picture'>
+        <view class='pic_1'>
+          <view class='pic_icon'>
+            <text class='que_3_icon iconfont icon-31paishexuanzhong'></text>
+          </view>
+        </view>
+        <view id='picture_1' class='pic_2'>
+          <image class='pic' wx:if='{{url1}}' src='{{url1}}'></image>
+        </view>
+        <view id='picture_1' class='pic_2' wx:if="{{url2}}">
+          <image class='pic' wx:if="{{url2}}" src='{{url2}}'></image>
+        </view>
+        <view id='picture_1' class='pic_2' wx:if="{{url2}}">
+          <image class='pic' wx:if="{{url3}}" src='{{url3}}'></image>
+        </view>
+
+
+
+      </view>
+      <view id='quit' class='quit' bindtap='cancelOrder'>
+        <text class='qui_icon iconfont icon-cuowu1'></text>
+        <view class='quit_1'>取消订单
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

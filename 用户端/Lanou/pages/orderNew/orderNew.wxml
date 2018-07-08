@@ -1,0 +1,144 @@
+<!--  orderNew  -->
+<view class='bac'>                
+  <view class='green'>
+  </view>
+
+  
+  <view class='frame' style='box-shadow: {{boxshadow_diqiu}};height: {{frame_diqiu_hei}};transition: height 300ms,box-shadow 300ms'>
+    <view class='frame_less' bindtap='navigatorToChangeAddress'>
+      <text class='icon diqiu iconfont icon-diqiu'/>
+      <view id='ind_add_1' class='ind'>{{address?address[selectIndex].address:'管理上门地址'}}</view>
+      <view id='ind_ID_1' class='ind indd'>{{address[selectIndex].contact}}</view>
+      <text class='icon_you iconfont icon-you' style='transform: rotate({{frame_diqiu_rot}}deg);transition: transform 300ms'/>
+    </view>
+  </view>
+
+
+
+
+  <view class='frame' style='box-shadow: {{boxshadow_time}};height: {{frame_time_hei}};transition: height 300ms,box-shadow 300ms'>
+    <view class='frame_less' bindtap='time'>
+      <text class='icon clock iconfont icon-59'/>
+      <text class='icon word'>挑个时间</text>
+      <view class='time_index_fix' style='opacity: {{frame_time_index_op}};transition: opacity 300ms'>
+        {{real_date[date]}} {{real_time[time]}}
+      </view>
+      <text class='icon_you iconfont icon-you' style='transform: rotate({{frame_time_rot}}deg);transition: transform 300ms'/>
+    </view>
+    <view class='date_hidden' style='opacity: {{frame_date_hidden_op}};margin: {{frame_date_margin}};transition: opacity 300ms,margin 300ms'>
+      <view class='date'>
+        <view class='plus_add left' bindtap='date_left'>
+          <text class='icon_date iconfont icon-back' style='color: {{frame_date_color}};transition: color 200ms'/>
+        </view>
+        <view class='date_index' style='color: {{frame_date_color}};transition: color 200ms'>
+          {{real_date[date]}}
+        </view>
+        <view class='plus_add right' bindtap='date_right'>
+          <text class='icon_date iconfont icon-right' style='color: {{frame_date_color}};transition: color 200ms'/>
+        </view>
+      </view>
+    </view>
+    <view class='date_code_hidden' style='opacity: {{frame_date_code_hidden_op}};transition: opacity 300ms'>
+      <scroll-view scroll-y class='date_code_hidden' scroll-top="0">
+        <view class='date_code_time' bindtap='code_time_1' style='color: {{frame_time_color_1}}'>
+          10:00-12:00
+        </view>
+        <view class='date_code_time' bindtap='code_time_2' style='color: {{frame_time_color_2}}'>
+          12:00-14:00
+        </view>
+        <view class='date_code_time' bindtap='code_time_3' style='color: {{frame_time_color_3}}'>
+          14:00-16:00
+        </view>
+        <view class='date_code_time' bindtap='code_time_4' style='color: {{frame_time_color_4}}'>
+          16:00-18:00
+        </view>
+        <view class='date_code_time date_code_fix' bindtap='code_time_5' style='color: {{frame_time_color_5}}'>
+          18:00-20:00
+        </view>
+      </scroll-view>
+    </view>
+    <text class='time_bottom iconfont icon-jiantouxia' style='opacity: {{date_down_op}};transition: opacity 300ms'/>
+  </view>
+
+
+
+
+  <view class='frame' style='box-shadow: {{boxshadow_weight}};height: {{frame_weight_hei}};transition: height 300ms,box-shadow 300ms'>
+    <view class='frame_less' bindtap='weight'> 
+      <text class='icon fama iconfont icon-fama'/>
+      <text class='icon word word_fama'>预计总重</text>
+      <view class='weight_index' style='opacity: {{frame_weight_index_op}};transition: opacity 300ms'>
+        {{real_weight[num]}} KG
+      </view>
+      <text class='icon_you iconfont icon-you' style='transform: rotate({{frame_weight_rot}}deg);transition: transform 300ms'/>
+    </view>
+    <view class='weight_hidden' style='opacity: {{frame_weight_hidden_op}};transition: opacity 300ms'>
+      <view class='plus'>
+        <view class='plus_add left' bindtap='jian'>
+          <text class='icon_aj iconfont icon-offline'/>
+        </view>
+        <view class='plus_index'>
+          {{real_weight[num]}} KG
+        </view>
+        <view class='plus_add right' bindtap='add'>
+          <text class='icon_aj iconfont icon-addition'/>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class='frame' style='height: {{frame_write_hei}};transition: height 300ms'>
+    <view class='frame_less' bindtap='write'>
+      <text class='icon write iconfont icon-pingjia'/>
+      <text class='icon word'>写给回收员的留言</text>
+      <view class='write_index' style='opacity: {{frame_write_index_op}};transition: opacity 300ms'>
+        {{inputValue}}
+      </view>
+    </view>
+    <view class='write_hidden' style='opacity: {{frame_write_hidden_op}};transition: opacity 300ms'>
+      <input class='write_input' bindinput="writeInput" maxlength='140' cursor-spacing='40px' placeholder='写点什么吧~(非必填)'/>
+    </view>  
+  </view>
+
+
+
+
+  <view class='photo_fra' style='box-shadow: {{boxshadow_photo}};transition: box-shadow 300ms'>
+    <view class='photo_up'>
+      <text class='icon_camara iconfont icon-31paishexuanzhong'/>
+      <text class='word_photo'>添加照片</text>
+      <view class='photo_reset' hidden='{{photo_reset_hidden}}' bindtap='resetPhoto'>
+        更换
+      </view>
+    </view> 
+    <view class='photo_down'>
+      <scroll-view scroll-x class='scroll_photo' scroll-top="0">
+        <view class='photo_add photo_add_first' bindtap='photo_0'>
+          <image mode='aspectFill' src='{{real_photo[0]}}'/>
+          <text class='icon_photo_add iconfont icon-add'/>
+        </view>
+        <view class='photo_add' bindtap='photo_1' hidden='{{photo_hidden_2}}'>
+          <image mode='aspectFill' src='{{real_photo[1]}}'/>
+          <text class='icon_photo_add iconfont icon-add'/>
+        </view>
+        <view class='photo_add photo_add_last' bindtap='photo_2' hidden='{{photo_hidden_3}}'>
+          <image mode='aspectFill' src='{{real_photo[2]}}'/>
+          <text class='icon_photo_add iconfont icon-add'/>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+
+  <button class='button' bindtap='button' style='background-color: {{button_backColor}};transition: background-color 300ms'>
+    <text style='color: {{button_fontColor}};transition: color 300ms'>立即下单</text> 
+  </button>
+  <text style='margin: 0 auto;font-size: 24rpx;color: #a1a1a1'></text>
+  <view style='position: relative;display: block;height:80rpx;width; 750rpx;margin: 0 auto;background-color:#f1f1f1'>
+  </view>
+  
+
+
+</view>

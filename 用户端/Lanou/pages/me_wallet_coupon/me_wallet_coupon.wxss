@@ -1,0 +1,27 @@
+/* pages/me_wallet_coupon/me_wallet_coupon.wxss */
+.all_page{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+}
+.page_inner{
+  padding: 15rpx;
+}
+.inner_one{
+  /* display: flex;
+  align-items: center;  */
+  text-align: center;
+  margin-top: 230rpx;
+}
+.inner_one_font{
+  height: 46rpx;
+  color: rgba(136, 136, 136, 1);
+  font-size: 29rpx;
+  font-family: Roboto;
+}
+#icon_one{
+  font-size: 35rpx;
+  color: rgba(136, 136, 136, 1);
+  padding-right: 25rpx;
+}

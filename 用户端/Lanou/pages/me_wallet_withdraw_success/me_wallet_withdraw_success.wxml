@@ -1,0 +1,18 @@
+<!--pages/me_wallet_withdraw_success/me_wallet_withdraw_success.wxml-->
+<view class='all_page'>
+  <view class='page_inner'>
+    <view class='first_inner'>
+      <view class='first_inner_icon'>
+        <i class="iconfont icon-caozuochenggong" id="icon_one"></i>
+      </view>
+      <view class='first_inner_font'>
+        <label>提现申请提交成功</label>
+      </view>
+    </view>
+    <view class='second_inner'>
+      <view>
+        <button class='button' bindtap='navigator'>确认</button>
+      </view>
+    </view>
+  </view>
+</view>

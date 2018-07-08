@@ -1,0 +1,228 @@
+<view class='bac'>
+
+  <view class='ord_2' style="opacity:{{0.3}}" data-id="{{orderid}}" bindtap="navigatorToDetail">
+    <view class='blo_1'>
+      <view id='pho' class='pho_2'>
+        <image src='https://ws2.sinaimg.cn/large/006tNc79ly1fpsduvv12cj30dw0afmyw.jpg'></image>
+      </view>
+    </view>
+    <view class='blo_2'>
+      <view class='blo_3'>
+        <view class='blo_4'>
+          <view class='i_1'>
+            <view id='tim' class='tim'>
+              <text>10:00-12:00</text>
+            </view>
+          </view>
+          <view class='i_2'>
+            <view id='add' class='add'>
+              <text>城东小区二号楼十单元601</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='blo_5'>
+      <view class='blo_6'>
+        <view id='pri_2' class='pri_2'>
+          <text>¥0.00</text>
+        </view>
+        <button class='eva_3'>已关闭</button>
+      </view>
+    </view>
+  </view>
+
+  <view class='ord_2' data-id="{{orderid}}" bindtap="navigatorToDetail">
+    <view class='blo_1'>
+      <view id='pho' class='pho_2'>
+        <image src='https://ws2.sinaimg.cn/large/006tNc79ly1fpsduvv12cj30dw0afmyw.jpg'></image>
+      </view>
+    </view>
+    <view class='blo_2'>
+      <view class='blo_3'>
+        <view class='blo_4'>
+          <view class='i_1'>
+            <view id='tim' class='tim'>
+              <text>30分钟内</text>
+            </view>
+          </view>
+          <view class='i_2'>
+            <view id='add' class='add'>
+              <text>城东小区2号楼5单元201</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  
+  <view class='blo_5'>
+    <view class='blo_6'>
+      <view id='pri_2' class='pri_2'>
+        <text>¥0.00</text>
+      </view>
+    </view>
+    <button class='eva_2' style='background-color:orange;color:white;border:orange;'>开始服务</button>
+  </view>
+</view>
+
+
+
+</view>
+
+
+
+<!--页面模板-->
+<template name="closed">
+
+  <view class='ord_2' style="opacity:{{0.3}}" data-id="{{orderid}}" bindtap="navigatorToDetail">
+    <view class='blo_1'>
+      <view id='pho' class='pho_2'>
+        <image src='{{url1}}'></image>
+      </view>
+    </view>
+    <view class='blo_2'>
+      <view class='blo_3'>
+        <view class='blo_4'>
+          <view class='i_1'>
+            <view id='tim' class='tim'>
+              <text>{{order_time}}</text>
+            </view>
+          </view>
+          <view class='i_2'>
+            <view id='add' class='add'>
+              <text>{{address}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='blo_5'>
+      <view class='blo_6'>
+        <view id='pri_2' class='pri_2'>
+          <text>¥{{order_money}}</text>
+        </view>
+        <button class='eva_3'>已关闭</button>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name="notRate">
+  <view class='ord_2' data-id="{{orderid}}" bindtap="navigatorToDetail">
+    <view class='blo_1'>
+      <view id='pho' class='pho_2'>
+        <image src='{{url1}}'></image>
+      </view>
+    </view>
+    <view class='blo_2'>
+      <view class='blo_3'>
+        <view class='blo_4'>
+          <view class='i_1'>
+            <view id='tim' class='tim'>
+              <text>{{order_time}}</text>
+            </view>
+          </view>
+          <view class='i_2'>
+            <view id='add' class='add'>
+              <text>{{address}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='blo_5'>
+      <view class='blo_6'>
+        <view id='pri_2' class='pri_2'>
+          <text>¥{{order_money}}</text>
+        </view>
+
+        <button class='eva_1'>评价</button>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name="rated">
+  <view class='ord_2' data-id="{{orderid}}" bindtap="navigatorToDetail">
+    <view class='blo_1'>
+      <view id='pho' class='pho_2'>
+        <image src='{{url1}}'></image>
+      </view>
+    </view>
+    <view class='blo_2'>
+      <view class='blo_3'>
+        <view class='blo_4'>
+          <view class='i_1'>
+            <view id='tim' class='tim'>
+              <text>{{order_time}}</text>
+            </view>
+          </view>
+          <view class='i_2'>
+            <view id='add' class='add'>
+              <text>{{address}}</text>
+            </view>
+          </view>
+        </view>
+        <view class='xing'>
+          <view id='xing_1' class='xing_1'>
+            <text class=" iconfont {{rate_star>=1?'que_icon icon-31shoucangxuanzhong':'que_1_icon icon-31shoucang' }}"></text>
+          </view>
+          <view id='xing_2' class='xing_2'>
+            <text class=" iconfont {{rate_star>=2?'que_icon icon-31shoucangxuanzhong':'que_1_icon icon-31shoucang' }}"></text>
+          </view>
+          <view id='xing_3' class='xing_3'>
+            <text class=" iconfont {{rate_star>=3?'que_icon icon-31shoucangxuanzhong':'que_1_icon icon-31shoucang' }}"></text>
+          </view>
+          <view id='xing_4' class='xing_4'>
+            <text class=" iconfont {{rate_star>=4?'que_icon icon-31shoucangxuanzhong':'que_1_icon icon-31shoucang' }}"></text>
+          </view>
+          <view id='xing_5' class='xing_5'>
+            <text class=" iconfont {{rate_star>=5?'que_icon icon-31shoucangxuanzhong':'que_1_icon icon-31shoucang' }}"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='blo_5'>
+      <view class='blo_6'>
+        <view id='pri_2' class='pri_2'>
+          <text>¥{{order_money}}</text>
+        </view>
+      </view>
+      <button class='eva_2'>已评价</button>
+    </view>
+  </view>
+</template>
+
+<template name="complaint">
+  <view class='ord_2' data-id="{{orderid}}" bindtap="navigatorToDetail">
+    <view class='blo_1'>
+      <view id='pho' class='pho_2'>
+        <image src='{{url1}}'></image>
+      </view>
+    </view>
+    <view class='blo_2'>
+      <view class='blo_3'>
+        <view class='blo_4'>
+          <view class='i_1'>
+            <view id='tim' class='tim'>
+              <text>{{order_time}}</text>
+            </view>
+          </view>
+          <view class='i_2'>
+            <view id='add' class='add'>
+              <text>{{address}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='blo_5'>
+      <view class='blo_6'>
+        <view id='pri_2' class='pri_2'>
+          <text>¥{{order_money}}</text>
+        </view>
+      </view>
+      <button class='eva_2'>投诉中</button>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,10 @@
+<!--pages/me_wallet_coupon/me_wallet_coupon.wxml-->
+<!-- 优惠券界面 -->
+<view class='all_page'>
+  <view class='page_inner'>
+    <view class='inner_one'>
+      <i class="iconfont icon-cry" id="icon_one"></i>
+      <label class='inner_one_font'>暂时没有卡卷哦</label>
+    </view>
+  </view>
+</view>

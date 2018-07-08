@@ -1,0 +1,300 @@
+.bac {
+  position: absolute;
+  height: 100%;
+  width: 750rpx;
+  padding: 0;
+  text-align: center;
+  background-color: #eee;
+}
+
+.green {
+  width: 100%;
+  height: 80rpx;
+  background-color: #2dcb70;
+}
+
+.que_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  margin: 42rpx 18rpx;
+  color: grey;
+
+}
+
+.que_1_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+}
+
+.que_2_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+}
+
+.que_3_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+}
+
+.address {
+  height: 130rpx;
+  background-color:white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.add_1 {
+  display: inline-block;
+  height: 120rpx;
+  width: 80rpx;
+  float: left;
+}
+
+.add_2 {
+  display: inline-block;
+  height: 50rpx;
+  width: 500rpx;
+  float: left;
+  margin: 0 30rpx 0 0;
+  text-align: center;
+  padding: 10rpx 0 10rpx 25rpx;
+  font-size: 30rpx;
+}
+
+.add_3 {
+  display: inline-block;
+  height: 50rpx;
+  width: 500rpx;
+  margin: 0 30rpx 0 0;
+  float: left;
+  text-align: center;
+  padding: 10rpx 0 10rpx 25rpx;
+  font-size: 28rpx;
+}
+
+.message {
+  height: 200rpx;
+  background-color: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.mes_1 {
+  display: inline-block;
+  height: 200rpx;
+  width: 80rpx;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+}
+
+.mes_2 {
+  display: inline-block;
+  height: 50rpx;
+  width: 500rpx;
+  float: left;
+  text-align: left;
+  margin: 5rpx 0 0 0;
+  padding: 15rpx 0 0 25rpx;
+  font-size: 30rpx;
+}
+
+.mes_3 {
+  display: inline-block;
+  height: 55rpx;
+  width: 500rpx;
+  text-align: left;
+  float: left;
+  padding: 15rpx 0 0 25rpx;
+  color: orange;
+  font-size: 30rpx;
+}
+
+.mes_5 {
+  display: inline-block;
+  height: 55rpx;
+  width: 500rpx;
+  text-align: left;
+  float: left;
+  padding: 15rpx 0 0 25rpx;
+  font-size: 30rpx;
+}
+
+.mes_1_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin: 18rpx 18rpx;
+}
+
+.mes_2_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin:2rpx 18rpx 18rpx 18rpx;
+}
+
+.mes_3_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin: 5rpx 18rpx 18rpx 18rpx;
+}
+
+.name {
+  height: 130rpx;
+  background-color: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.nam_1 {
+  display: inline-block;
+  height: 120rpx;
+  width: 80rpx;
+  float: left;
+}
+
+.nam_2 {
+  display: inline-block;
+  height: 80rpx;
+  width: 500rpx;
+  float: left;
+  text-align: left;
+  padding: 40rpx 0 0 25rpx;
+  font-size: 30rpx;
+}
+
+.nam_3 {
+  height: 120rpx;
+  width: 100rpx;
+  float: right;
+}
+.nam_4{
+display: inline-block;
+height: 110rpx;
+  width: 600rpx;
+  float:left;
+  text-align: left;
+  padding: 10rpx 0 0 25rpx;
+  font-size: 28rpx;
+
+}
+.input{
+   display: -webkit-box;
+    font-size:28rpx;
+    line-height: 40rpx;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+    text-overflow:ellipsis;
+
+}
+
+.nam_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: center;
+  margin: 40rpx 0 0 15rpx;
+}
+
+.picture {
+  height: 180rpx;
+  background-color: white;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.pic_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin: 30rpx 18rpx;
+}
+
+.pic_1 {
+   display: inline-block; 
+  height: 180rpx;
+  width: 80rpx;
+  float: left;
+}
+
+.pic_2 {
+   display: inline-block; 
+  height: 140rpx;
+  width: 140rpx;
+  float: left;
+  margin: 20rpx 20rpx 0 25rpx;
+  border: 1px solid#707070;
+  font-size: 30rpx;
+}
+.pic{
+   height: 140rpx;
+  width: 140rpx;
+}
+.quit {
+  height: 110rpx;
+  width: 94%;
+  background-color: orange;
+  border-radius: 10rpx;
+  margin: 20rpx 3%;
+}
+
+.quit_1 {
+  display: inline-block;
+  font-size: 32rpx;
+  color: white;
+  margin: 38rpx 0 0 -60rpx;
+}
+
+.qui_icon {
+  display: inline-block;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  font-size: 45rpx;
+  margin: 35rpx 15rpx;
+  color: white;
+}
+
+.rig_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  color: grey;
+}
+
+
+/* 无历史订单时 */
+.page_inner{
+  padding: 15rpx;
+}
+.inner_one{
+  /* display: flex;
+  align-items: center;  */
+  text-align: center;
+  margin-top: 230rpx;
+}
+.inner_one_font{
+  height: 46rpx;
+  color: rgba(136, 136, 136, 1);
+  font-size: 29rpx;
+  font-family: Roboto;
+}
+#icon_one{
+  font-size: 35rpx;
+  color: rgba(136, 136, 136, 1);
+  padding-right: 25rpx;
+}

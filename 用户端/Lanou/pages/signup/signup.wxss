@@ -1,0 +1,91 @@
+/* pages/signup/signup.wxss */
+.wxml,body{
+  padding: 0;
+}
+
+.o2{
+  position: absolute; 
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  /* filter: blur(4px); */
+  filter: blur(0.0px) brightness(0.7);
+  z-index: -1
+}
+
+.container{ 
+  display: block;
+  position: relative;
+  top: 150rpx;
+  height: 500rpx;
+  width: 580rpx;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0
+}
+.container text{
+  display: block; 
+  height: 130rpx;
+  margin: 0;
+  padding: 0;
+  font-size: 34px;
+  color: white;
+}
+
+.input{
+  display: block;
+  height: 65rpx;
+  width: 100%;
+  margin: 25px 0;
+  padding: 0;
+  border-bottom: 1px solid white;
+}
+.input_fix{
+  margin: 0 0 58rpx 0;
+}
+
+.input input{
+  display: block; 
+  float: left;
+  color: white;
+  height: 65rpx;
+  width: 410rpx;
+  font-size: 20px;
+  text-align: left;
+}
+
+.button{
+  display: block;
+  height: 44px;
+  width: 580rpx;
+  color: white;
+  margin: 0;
+  padding: 0 auto;
+  background-color: #2dcb70;
+}
+.button:hover{
+  background-color: #2DB95E;
+}
+
+.passbox{
+  display: block;
+  float: left;
+  height: 44rpx;
+  width: 165rpx;
+  margin: 10rpx 0 0 0;
+  border-left: 1rpx solid white;
+}
+.passbox view{
+  display: block;
+  height: 44rpx;
+  width: 169rpx;
+  margin: 0 auto;
+  padding: 4rpx 0 0 0;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+  font-size: 14px;
+  border: none;
+}
+
+

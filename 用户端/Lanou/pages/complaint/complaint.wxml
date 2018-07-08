@@ -1,0 +1,24 @@
+<view class='bac'>
+  <view class='input'>
+    <view class='inp_1'>
+      <view class='que_inp_icon'>
+        <text class='que_icon iconfont icon-pingjia'></text>
+      </view>
+    </view>
+    <view id='wor' class='nam' wx:if="{{complaint_time == 0}}">
+      <textarea class='input_1' bindlinechange='bindlinechange' placeholder='请输入投诉内容'>
+      </textarea>
+    </view>
+     <view id='wor' class='nam' wx:if="{{complaint_time != 0}}">
+      <text class='input_2'>{{complaint_text}}
+      </text>
+    </view>
+  </view>
+  
+  <view id='determine' class='determine' wx:if="{{complaint_time == 0}}" bindtap="evaluateOrder" >
+    <text class='det_icon iconfont icon-duigou'></text>
+  </view>
+<view class='det_text' wx:if="{{complaint_time != 0}}">
+    投诉正在处理中,请耐心等待
+</view>
+</view>

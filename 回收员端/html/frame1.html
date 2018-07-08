@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>服务</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/order.css" />
+    <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+    <meta content="telephone=no" name="format-detection" />
+
+</head>
+
+<body>
+
+        <div class="aui-tab" id="tab">
+            <div class="aui-tab-item aui-active">预约中</div>
+            <div class="aui-tab-item">待送货</div>
+            <div class="aui-tab-item">已完成</div>
+        </div>
+        <div class="bac">
+            <div class="z_1">
+              <block v-for="item in data">
+                <div class="frame" v-if="item[0] == index">  <!-- index与status一致才能渲染 -->
+                    <div class="photo left">
+                        <img class="photo_p" src="" alt="">
+                    </div>
+                    <div class="word left">
+                        <div class="predict">
+                            预约时间 {{item[0]}} {{item[1]}}
+                        </div>
+                        <div class="predict">
+                            地址 {{item[2]}}
+                        </div>
+                    </div>
+                    <div class='button'>
+                        <button class="button_self">
+                           开始
+                        </button>
+                    </div>
+                </div>
+              </block>
+            </div>
+        </div>
+
+
+
+    <script type="text/javascript" src="../script/api.js"></script>
+    <script type="text/javascript" src="../script/aui-tab.js"></script>
+    <script>
+        apiready = function() {
+
+            var tab = new auiTab({
+                element: document.getElementById("tab"),
+            }, function(ret) {
+                vm.index = ret.index
+
+            });
+
+
+            var vm = new Vue({
+                el: ".bac",
+                data: {
+                    index: 1,
+                    data:[[1,'2018-03-24','111','111'],[2,'1111','1111','2222'],[1,'1221','1111','2222']],
+                    today: 0,
+                    tomorrow: 0,
+                    tosend: 0,
+                    goodrates: 0,
+                    score: '0.0',
+                },
+                computed: {
+
+                },
+                methods: {
+                   fetchCollectorOrder:function() {
+                        api.ajax({
+                            url: 'https://www.iamxz.net/controller/order.php?action=fetchcollectororder',
+                            method: 'post',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            data: {
+                                session: 12345678 //根据session查collectorid 然后再抓取他的所有订单
+                            }
+                        }, function(ret, err) {
+                            if (ret) {
+                                api.alert({
+                                    msg: ret
+                                });
+                                if (ret.rusult = "success") {
+                                    vm.data = ret.msg //msg是嵌套数组 0-7 status，id，预约日期，预约时间段，城市，小区，楼号，详细地址，url1
+                                } else if (ret.msg = "session已过期") {
+                                    //do something
+                                }
+                            } else {
+                                api.alert({
+                                    msg: JSON.stringify(err)
+                                });
+                            }
+                        });
+                    }
+
+                },
+                mounted: function() {
+
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<view class='bac'>
+  <view class='top'>
+    <view class='container' style='height:850rpx'>
+      <picker mode="region" class='region' value='{{region}}' bindchange="bindRegionChange">
+        <text id='region' class='region_1'>{{region[0]}},{{region[1]}},{{region[2]}}</text>
+        <view class='region_2'>
+          <text class='rig_icon iconfont icon-you'>
+          </text>
+        </view>
+      </picker>
+
+      <picker mode="selector" range='{{neighborhoodArray}}' disabled='{{neighborhoodArray?false:true}}'  class='district' value='{{neighborhood}}' bindchange="bindNeighborhoodChange">
+        <text id='district' class='district_1' wx:if='{{!neighborhood}}'>{{neighborhoodPlaceholder}}</text>
+        <text id='district' class='district_1' wx:if='{{neighborhood}}'>{{neighborhood}}</text>
+         <view class='district_2' hidden='{{neighborhoodPlaceholder=="小区"?false:true}}'>
+          <text class='rig_icon iconfont icon-you'>
+          </text>
+        </view> 
+      </picker>
+      
+      <picker mode="selector" range='{{buildingnumberArray}}' disabled='{{neighborhoodArray?false:true}}'  class='block' value='{{neighborhood}}' bindchange="bindBuildingnumberChange">
+        <text id='block' class='block_1' wx:if='{{!buildingnumber}}'>楼号</text>
+        <text id='block' class='block_1' wx:if='{{buildingnumber}}'>{{buildingnumber}}</text>
+         <view class='block_2' hidden='{{neighborhoodPlaceholder=="小区"?false:true}}'>
+          <text class='rig_icon iconfont icon-you'>
+          </text>
+        </view> 
+      </picker>
+
+      <view class='detailed'>
+        <view id='detailed' class='detailed_1'>
+          <input id='detailed' type='text' placeholder='详细地址' placeholder-style='font-size:32rpx;color:#909090' bindinput='detailAddressSubmit' disabled='{{input}}' value='{{detail}}'></input>
+        </view>
+      </view>
+      <view class='contact'>
+        <view id='contact' class='contact_1'>
+          <input id='contact' type='text' placeholder='联系人' placeholder-style='font-size:32rpx;color:#909090' bindinput='nameSubmit' disabled='{{input}}' value='{{name}}' ></input>
+        </view>
+      </view>
+      <view class='phone'>
+        <view id='phone' class='phone_1'>
+          <input id='phone' type='number' placeholder='电话' placeholder-style='font-size:32rpx;color:#909090' bindinput='phonenumberSubmit' disabled='{{input}}' value='{{phonenumber}}'></input>
+        </view>
+      </view>
+      <button class='dui' bindtap='modifyAddress'>
+        <text class='dui_icon'>确认修改</text>
+      </button>
+      <button class='dui' bindtap='deleteAddress' style='margin-top:480rpx; background-color:orange'>
+        <text class='dui_icon'>删除地址</text>
+      </button>
+      <view class='zhu'style='margin-top:580rpx'>
+        <text>列表以外的小区我们还在努力开通中</text>
+      </view>
+    </view>
+  </view>
+
+</view>

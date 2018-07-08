@@ -1,0 +1,39 @@
+<!--pages/order_detail/order_detail.wxml-->
+<view>
+
+
+  <!--正常显示-->
+  <view>
+    <view class='page'>
+      <view class='top'>
+        <view class='top_in'>
+          <i class="iconfont icon-wode2" id="icon1"></i>
+          <label class='top_in_text'>{{name}}</label>
+        </view>
+      </view>
+      <view class='inner'>
+        <view class='inner_in'>
+
+          <view class='item-container'>
+        
+          <view class='item item-top' >
+            <text>名称</text>
+            <text>下单单价</text>
+            <text>重量/数量</text>
+            <text>总价</text>
+            </view>
+           <block wx:for='{{items}}' wx:for-item="item"> 
+            <view class='item'>
+            <text>{{item[0]}}</text>
+            <text>{{item[1]}}</text>
+            <text>{{item[2]}}</text>
+            <text>{{item[3]}}</text>
+            </view>
+           </block> 
+          </view>
+          <label></label>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

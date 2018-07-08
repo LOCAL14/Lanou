@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>端API</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/serve.css" />
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+    <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+
+</head>
+
+<body>
+
+    <div class="bac">
+        <div class="news">
+            【通知】关于回收员在工作时不穿制服的通报
+        </div>
+        <div class="up_order">
+            <div class="up_order_frame up_left">
+                <div class="up_order_frame_div">
+                    今日预约
+                </div>
+                <div class="frame_today">
+                    <div style="font-size: 40px">
+                        {{today}}
+                    </div>
+                </div>
+            </div>
+            <div class="up_order_frame up_middle">
+                <div class="up_order_frame_div">
+                    明日预约
+                </div>
+                <div class="frame_today">
+                    <div style="font-size: 40px">
+                        {{tomorrow}}
+                    </div>
+                </div>
+            </div>
+            <div class="up_order_frame up_right">
+                <div class="up_order_frame_div">
+                    累计未送货
+                </div>
+                <div class="frame_today">
+                    <div style="font-size: 40px; color: #ff9800">
+                        {{tosend}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle_score">
+            <div class="goodrate_frame">
+                <div class="middle_type left" style="text-align: left; color: #2dcb70">
+                    <div class="good_word">
+                        好评率
+                    </div>
+                    <p class="good_1 iconfont icon-appreciatefill">
+
+                    </p>
+                </div>
+                <div class="middle_type right" style="text-align: right; color: #2dcb70">
+                    <div class="scorenumber">{{goodrates}}%</div>
+                </div>
+            </div>
+        </div>
+        <div class="middle_score">
+            <div class="goodrate_frame">
+                <div class="middle_type left" style="text-align: left; color: #328cb3;">
+                    <div class="good_word">
+                        服务分
+                    </div>
+                    <p class="good_1 iconfont icon-selection"></p>
+
+                </div>
+                <div class="middle_type right" style="text-align: right; color: #328cb3">
+                    <div class="scorenumber">{{score}}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button_order">
+            <button class="button">
+            开始接单
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src='../script/api.js'></script>
+    <script>
+        apiready = function() {
+
+
+            var vm = new Vue({
+                el: '.bac',
+                data: {
+                    today:0,
+                    tomorrow:0,
+                    tosend:0,
+                    goodrates: 0,
+                    score: '0.0',
+                },
+                computed: {
+
+
+                },
+                methods: {
+                    getCollectorData: function() {
+                        api.ajax({
+                            url: 'https://www.iamxz.net/controller/collector.php?action=getstatusinfo',
+                            method: 'post',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            data: {
+                                  session:12345678
+                            }
+                        }, function(ret, err) {
+                            if (ret) {
+                                api.alert({
+                                    msg: ret
+                                });
+                                if(ret.rusult="success"){
+                                  vm.today = ret.msg.today
+                                  vm.tomorrow = ret.msg.tomorrow
+                                  vm.tosend = ret.msg.tosend
+                                  vm.goodrates = ret.msg.goodrates
+                                  vm.score = ret.msg.score
+                                }else if(ret.msg="session已过期"){
+                                  //do something
+                                }
+                            } else {
+                                api.alert({
+                                    msg: JSON.stringify(err)
+                                });
+                            }
+                        });
+                    }
+
+                },
+                created: function() {
+                    this.getCollectorData()
+                }
+            })
+        }
+    </script>
+
+
+</body>
+
+</html>

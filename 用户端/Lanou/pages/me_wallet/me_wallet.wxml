@@ -1,0 +1,42 @@
+<!--pages/me_wallet/me_wallet.wxml-->
+<view class='body'>
+  <view class='rounded_rect'>
+    <view class='top_inner'>
+      <label class='icon_buttona'>
+        <i class="iconfont icon-ai-wallet" id="icon1"></i>
+      </label>
+      <label class='labela'>余额</label>
+    </view>
+    <view class='labelb_f'>
+      <label class='labelb'>￥{{balance}}</label>
+    </view>
+    <view>
+      <button class='button' bindtap='navigator'>立刻提现</button>
+    </view>
+    <view>
+      <view class='labelc_f'>
+        <label class='labelc'>提现记录</label>
+      </view>
+    </view>
+  </view>
+  <view class='the_second' bindtap='navigator2'>
+    <button class='second_button'>
+      <view class='second'>
+        <view class='second_inner'>
+          <view class='second_left'>
+            <i class="iconfont icon-youhuiquan" id="icon2"></i>
+            <i class='second_labela'>卡券</i>
+          </view>
+          <view class='second_right'>
+            <label class='second_labelb'>0张 </label>
+            <label>
+              <label class='icon_button'>
+                <i class="iconfont icon-you" id="icon3"></i>
+              </label>
+            </label>
+          </view>
+        </view>
+      </view>
+    </button>
+  </view>
+</view>

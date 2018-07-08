@@ -1,0 +1,97 @@
+/* pages/lanou/lanou.wxss */
+
+.bac {
+  position: absolute;
+  height: 100%;
+  width: 750rpx;
+  padding: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.que_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  margin: 20rpx 5rpx;
+  color: #2dcb70;
+}
+
+.que_1_icon {
+  display: flex;
+  font-size: 45rpx;
+  float: left;
+  color: #2dcb70;
+}
+
+.que_2_icon {
+  display: flex;
+  font-size: 40rpx;
+  float: left;
+  color: #2dcb70;
+}
+
+.box {
+  /* height: 80%; */
+  width: 93%;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.wenti {
+  display: block;
+  margin: 10px 0 20px 20px;
+  font-size: 31rpx;
+}
+
+.font_all {
+  display: block;
+  margin: 10px 10px 0 10px;
+  font-size: 25rpx;
+}
+
+.grey {
+  margin: 0 20px;
+  color: #888;
+}
+
+.yiwen {
+  margin: 120rpx 0 0 20rpx;
+  font-size: 31rpx;
+}
+
+.tel {
+  background-color: #2dcb70;
+  height: 110rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+
+.tel_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  border-radius: 10rpx;
+  margin: 32rpx 40rpx;
+  background-color: white;
+}
+
+.tel_1 {
+  display: inline-block;
+  margin: 34rpx 5rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: center;
+}
+
+.yiwen_icon {
+  display: flex;
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin: 120rpx 0 0 20rpx;
+}

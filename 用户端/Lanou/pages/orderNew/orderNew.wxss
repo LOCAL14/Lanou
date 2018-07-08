@@ -1,0 +1,407 @@
+/* pages/order/order.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.bac{
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 750rpx;
+  text-align: center;
+  background-color: #f1f1f1; 
+  z-index: 1;
+}
+.green{
+  position: absolute;
+  display: block;
+  height: 80rpx;
+  width: 750rpx;
+  text-align: center;
+  background-color: #2dcb70
+}
+.frame{
+  position: relative;
+  display: block; 
+  height: 120rpx;     
+  width: 700rpx;
+  margin: 10rpx auto 20rpx auto;
+  border-radius: 6px; 
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+}
+.frame_less{
+  position: relative;
+  display: block;
+  height: 120rpx;
+  width: 700rpx;
+  text-align: left;
+  border-radius: 6px;
+  background-color: white;
+}
+.icon_you{
+  position: relative;
+  display: block;
+  margin: 42rpx 20rpx auto auto;  
+  float: right;
+  font-size: 36rpx;
+  color: #333333
+}
+.icon{
+  position: relative;
+  display: block;
+  float: left;
+  color: #333333
+}
+.word{
+  margin: 40rpx auto auto 39rpx;
+  font-size: 32rpx;
+}
+.diqiu{
+  margin: 34rpx auto auto 30rpx;
+  font-size: 50rpx
+}
+.clock{
+  margin: 34rpx auto auto 29rpx;
+  font-size: 50rpx 
+}
+.fama{
+  margin: 28rpx auto auto 20rpx;
+  font-size: 62rpx
+}
+.word_fama{
+  margin: 40rpx auto auto 38rpx
+}
+.write{
+  margin: 36rpx auto auto 31rpx;
+  font-size: 44rpx
+}
+.icon_camara{
+  position: relative;
+  display: block;
+  float: left;
+  margin: 20rpx auto auto 28rpx;
+  font-size: 50rpx;
+  color: #333333;
+}
+.word_photo{
+  position: relative;
+  display: block;
+  float: left;
+  margin: 26rpx auto auto 40rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+.photo_fra{
+  position: relative;
+  display: block;
+  height: 360rpx;
+  width: 700rpx;
+  margin: 10rpx auto 20rpx auto;
+  padding: 0;
+  border-radius: 6px; 
+  text-align: left;
+  background-color: white;
+}
+.photo_up{
+  position: relative;
+  display: block;
+  height: 100rpx;
+  width: 700rpx;
+  border-radius: 6px;
+  background-color: white 
+}
+.photo_down{
+  position: relative;
+  display: block;
+  height: 260rpx;
+  width: 700rpx;
+  border-radius: 6px;
+  background-color: white
+}
+
+
+
+
+
+.date_hidden{
+  position: relative;
+  display: block;
+  height: 100rpx;
+  width: 700rpx;
+  border-radius: 6px;
+  text-align: center;
+  background-color: white
+}
+.date_code_hidden{
+  position: relative;
+  display: block;
+  height: 300rpx;
+  width: 700rpx;
+  text-align: center;
+  border-radius: 6px; 
+  background-color: white
+}
+.date{
+  position: relative;
+  display: block;
+  height: 100rpx;
+  width: 500rpx;
+  margin: 0 auto;
+  background-color: white;
+}
+.icon_date{
+  position: relative;
+  display: block;
+  margin: 14rpx auto 0 auto;
+  font-size: 70rpx;
+  color: #333333;
+}
+.date_index{
+  position: relative;
+  display: block;
+  float: left;
+  height: 80rpx;
+  width: 240rpx;
+  margin: 20rpx 0 0 10rpx;
+  font-size: 44rpx;
+  background-color: white
+}
+.time_index_fix{
+  position: relative;
+  display: block;
+  height: 62rpx;
+  width: 260rpx;
+  margin: 24rpx 0 0 120rpx;
+  padding: 16rpx 0 0 0;
+  float: left;
+  font-size: 32rpx;
+  color: #2dcb70;
+  text-align: right;
+  background-color: white;
+}
+.date_code_time{
+  position: relative;
+  display: block;
+  height: 76rpx;
+  width: 600rpx;
+  margin: 0 auto;
+  padding: 24rpx 0 0 0;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: white; 
+}
+.date_code_fix{
+  border-bottom: none;
+  height: 80rpx;
+  padding: 20rpx 0 0 0
+}
+.time_bottom{
+  position: relative;
+  display: block;
+  height: 34rpx;
+  width: 34rpx;
+  margin: -30rpx auto 0 auto;
+  font-size: 34rpx;
+  color: #bbbbbb;
+}
+
+
+
+
+
+
+
+
+
+.weight_hidden{
+  position: relative;
+  display: block;
+  height: 120rpx;
+  width: 700rpx;
+  border-radius: 6px;
+  text-align: center; 
+  background-color: white;
+}
+.weight_index{
+  position: relative;
+  display: block;
+  height: 66rpx;
+  width: 180rpx;
+  margin: 26rpx 0 0 220rpx;
+  padding: 14rpx 0 0 0;
+  float: left;
+  font-size: 34rpx;
+  color: #2dcb70;
+  text-align: center;
+  background-color: white;
+}
+.plus{
+  position: relative;
+  display: block;
+  height: 120rpx;
+  width: 500rpx;
+  margin: 0 auto;
+  background-color: white;
+}
+.plus_add{
+  position: relative;
+  display: block;
+  height: 100rpx;
+  width: 120rpx;
+  background-color: white
+}
+.left{
+  float: left
+}
+.right{
+  float: right
+}
+.plus_index{
+  position: relative;
+  display: block;
+  float: left;
+  height: 80rpx;
+  width: 240rpx;
+  margin: 22rpx 0 0 10rpx;
+  font-size: 50rpx; 
+  background-color: white;
+}
+.icon_aj{
+  position: relative;
+  display: block;
+  margin: 20rpx auto 0 auto;
+  font-size: 70rpx;
+  color: #333333;
+}
+
+
+
+
+
+.write_hidden{
+  position: relative;
+  display: block;
+  height: 288rpx;
+  width: 638rpx;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  background-color: white 
+}
+.write_input{
+  position: relative;
+  display: block;
+  padding: 10rpx;
+  width: 598rpx;
+  text-align: left;
+  margin: 10rpx auto 0 auto;
+  border-radius: 6px;
+  font-size: 32rpx;
+  background-color: white;
+}
+.write_index{
+  position: relative;
+  display: block;
+  height: 52rpx;
+  width: 246rpx;
+  margin: 24rpx 0 0 80rpx;
+  padding: 16rpx 0 0 0;
+  float: left;
+  font-size: 34rpx;
+  color: #2dcb70;
+  text-align: left;
+  overflow: hidden;
+  background-color: white;
+}
+
+
+
+
+
+.scroll_photo{
+  display: block;
+  height: 230rpx;
+  width: 700rpx;
+  border-radius: 6px;
+  white-space: nowrap;
+  background-color: white;
+}
+.photo_add{
+  position: relative;
+  display: inline-block;
+  height: 230rpx;
+  width: 230rpx;
+  margin: 0 0 0 8rpx;
+  border-radius: 6px; 
+  text-align: center;
+  overflow: hidden;
+  background-color: #eeeeee
+}
+.photo_add_first{
+  margin: 0 0 0 30rpx
+}
+.photo_add_last{
+  margin: 0 30rpx 0 8rpx
+}
+.photo_add image{
+  position: relative;
+  display: block;
+  height: 230rpx;
+  width: 230rpx;
+  border-radius: 6px;
+  z-index: 50
+}
+.icon_photo_add{
+  position: relative;
+  display: block;
+  margin: -156rpx auto 0 auto;
+  color: #333333;
+  font-size: 80rpx;
+}
+.photo_reset{
+  position: relative;
+  display: block;
+  float: right;
+  height: 54rpx;
+  width: 110rpx;
+  margin: 18rpx 18rpx 0 0;
+  padding: 12rpx 0 0 4rpx;
+  text-align: center;
+  font-size: 30rpx;
+  letter-spacing: 6rpx;
+  color: white;
+  border-radius: 6px;
+  background-color: #2dcb70
+}
+
+
+
+
+
+.button{
+  position: relative;
+  display: block;
+  height: 100rpx;
+  width: 700rpx;
+  margin: 0 auto;
+}
+.button text{
+  position: relative;
+  display: block;
+  font-size: 36rpx;
+  margin: 6rpx auto 0 auto
+}
+
+
+.ind{
+  display: block;
+  height: 20px;
+  width: 60%; 
+  margin: 5px auto;
+  text-align: center;
+  font-size: 32rpx;
+}
+.indd{
+  font-size: 28rpx 
+}

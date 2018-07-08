@@ -1,0 +1,20 @@
+<!--pages/lanou/lanou.wxml-->
+<view class='bac'>
+  <view class='topbar'>
+    <view id='add_address' class='add' bindtap='navigatorToAddNew'>
+      添加新地址
+    </view>
+  </view>
+  <view class='his_box'>
+    <block wx:for='{{array}}'>
+      <view id='his_add_1' class='add add_fix'>
+        <text class="rig_icon iconfont {{item.index == selectIndex? 'icon-radiochecked active' : 'icon-radiounchecked'}}" bindtap='selectAddress' data-id='{{item.index}}'></text>
+        <view class='text' data-id='{{item.index}}' bindtap='selectAddress'>
+          <view id='ind_add_1' class='ind'>{{item.address}}</view>
+          <view id='ind_ID_1' class='ind indd'>{{item.contact}}</view>
+        </view>
+        <text class='rig_icon iconfont icon-you' bindtap='navigatorToModify' data-id='{{item.index}}' ></text>
+      </view>
+    </block>
+  </view>
+</view>

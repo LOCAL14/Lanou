@@ -1,0 +1,19 @@
+<!--pages/signup/signup.wxml-->
+<image class='o2' src='/image/signup1.jpg'></image>
+<view class='container'>
+  <text>你好!</text>
+  <form>
+    <label>
+      <view class='input'>
+        <input id='phonenum' type='number' placeholder='输入帐号' maxlength='11' placeholder-style='font-size:15px;color:white' bindinput='phonenumberSubmit' disabled='{{input}}'></input>
+      </view>
+      <view class='input input_fix'>
+        <input id='passnum' type='password' placeholder='输入密码'  placeholder-style='font-size:15px;color:white' bindinput='codeSubmit'></input>
+        <view class='passbox'>
+          <view bindtap='getcode'  id='passcheck'>忘记密码</view>
+        </view>
+      </view>
+    </label>
+    <button id='sign' class='button' hover-start-time='0ms' hover-stay-time='0ms' bindtap='login' bindgetuserinfo="getUserInfo" open-type="getUserInfo">登录</button>
+  </form>
+</view>

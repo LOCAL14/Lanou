@@ -1,0 +1,175 @@
+<view class='bac'>
+  <view class='green'>
+    <view class='address'>
+        <view class='add_1'>
+          <text class='que_icon iconfont icon-diqiu'></text>
+        </view>
+        <view id='add_2' class='add_2'>
+          <text>{{orderData['address5']+' '+orderData['address2']+orderData['address3']+orderData['address4']}}</text>
+        </view>
+        <view id='add_3' class='add_3'>
+          <text decode='true'>{{orderData['contact_name']+' '+orderData['phonenumber']}}</text>
+        </view>
+      </view>
+      <view class='message'>
+        <view class='mes_1'>
+          <view class='mes_1_icon'>
+            <text class='que_1_icon iconfont icon-rili'></text>
+          </view>
+          <view class='mes_2_icon'>
+            <text class='que_1_icon iconfont icon-time'></text>
+          </view>
+          <view class='mes_3_icon'>
+            <text class='que_1_2_icon iconfont icon-fama'></text>
+          </view>
+          <view class='mes_4_icon'>
+            <text class='que_2_icon iconfont icon-ai-wallet'></text>
+          </view>
+        </view>
+        <view id='mes_2' class='mes_2'>
+          <text>{{orderData['appoint_date']}}</text>
+        </view>
+        <view id='mes_3' class='mes_3'>
+          <text>{{orderData['appoint_time']}}
+           </text>
+        </view>
+        <view id='mes_4' class='mes_4'>
+          <text>{{orderData['evaluate_weight']}}KG
+           </text>
+        </view>
+        <view id='mes_5' class='mes_5'>
+          <text>¥{{orderData['order_money']}}
+           </text>
+        </view>
+      </view>
+
+      <!--订单未关闭 详情  -->
+      <view class='name' wx:if="{{orderData.status != 0}}" bindtap="navigatorToDetail">
+        <view class='nam_1'>
+          <view class='que_icon'>
+            <text class='que_1_3_icon iconfont icon-quanbudingdan'></text>
+          </view>
+        </view>
+        <view id='nam_2' class='nam_2'>
+          <text>查看订单详情</text>
+        </view>
+          <view class='nam_3'>
+          <view class='que_icon'>
+            <text class='que_1_3_icon iconfont icon-right'></text>
+          </view>
+        </view>
+      </view>
+      <!--订单已关闭 详情  -->
+       <view class='name' wx:if="{{orderData.status == 0}}">
+        <view class='nam_1'>
+          <view class='que_icon'>
+            <text class='que_1_3_icon iconfont icon-quanbudingdan'></text>
+          </view>
+        </view>
+        <view id='nam_2' class='nam_2'>
+          <text>订单已关闭</text>
+        </view>
+          <view class='nam_3'>
+          <view class='que_icon'>
+            <text class='que_1_3_icon iconfont icon-right'></text>
+          </view>
+        </view>
+      </view>
+
+      <!--订单未评价  -->
+      <view class='input' wx:if="{{orderData.rate_time == 0}}">
+        <view class='inp_1'>
+          <view class='que_inp_icon'>
+            <text class='que_1_3_icon iconfont icon-pingjia'></text>
+          </view>
+        </view>
+        <view id='wor_2' class='nam_4'>
+          <view class='xing'>
+          <view id='xing_1' class='xing_1' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{rateStar>=1?'icon-31shoucangxuanzhong':'icon-31shoucang' }}" bindtap="changeRateStar" data-id="1"></text>
+              </view>
+          </view>
+          <view id='xing_2' class='xing_2' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{rateStar>=2?'icon-31shoucangxuanzhong':'icon-31shoucang' }}" bindtap="changeRateStar" data-id="2"></text>
+              </view>
+          </view>
+          <view id='xing_3' class='xing_3' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{rateStar>=3?'icon-31shoucangxuanzhong':'icon-31shoucang' }}" bindtap="changeRateStar" data-id="3"></text>
+              </view>
+          </view>
+          <view id='xing_4' class='xing_4' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{rateStar>=4?'icon-31shoucangxuanzhong':'icon-31shoucang' }}" bindtap="changeRateStar" data-id="4"></text>
+              </view>
+          </view>
+          <view id='xing_5' class='xing_5' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{rateStar>=5?'icon-31shoucangxuanzhong':'icon-31shoucang' }}" bindtap="changeRateStar" data-id="5"></text>
+              </view>
+          </view>
+         </view>
+
+        <view >
+          <textarea  class='input_1' bindinput='changeRateText'placeholder='输入评价'>
+          </textarea>
+        </view>
+       
+        </view>
+
+      </view>
+      <!--订单已评价  -->
+      <view class='input' wx:if="{{orderData.rate_time > 0}}">
+        <view class='inp_1'>
+          <view class='que_inp_icon'>
+            <text class='que_1_3_icon iconfont icon-pingjia'></text>
+          </view>
+        </view>
+        <view id='wor_2' class='nam_4'>
+          <view class='xing'>
+          <view id='xing_1' class='xing_1' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{orderData.rate_star>=1?'icon-31shoucangxuanzhong':'icon-31shoucang' }}"></text>
+              </view>
+          </view>
+          <view id='xing_2' class='xing_2' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{orderData.rate_star>=2?'icon-31shoucangxuanzhong':'icon-31shoucang' }}"></text>
+              </view>
+          </view>
+          <view id='xing_3' class='xing_3' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{orderData.rate_star>=3?'icon-31shoucangxuanzhong':'icon-31shoucang' }}"></text>
+              </view>
+          </view>
+          <view id='xing_4' class='xing_4' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{orderData.rate_star>=4?'icon-31shoucangxuanzhong':'icon-31shoucang' }}"></text>
+              </view>
+          </view>
+          <view id='xing_5' class='xing_5' >
+              <view id='full_1'  >
+                <text class="xing_1_1_icon iconfont {{orderData.rate_star>=5?'icon-31shoucangxuanzhong':'icon-31shoucang' }}"></text>
+              </view>
+          </view>
+         </view>
+
+        <view >
+          <text  class='evaluate-text' >{{orderData.rate_text}}
+          </text>
+        </view>
+       
+        </view>
+
+      </view>
+      
+      <view id='determine' class='determine' wx:if="{{orderData.rate_time == 0}}" bindtap="evaluateOrder">
+        <text class='det_icon iconfont icon-duigou'></text>
+      </view>
+       
+        <text class='det_text' bindtap='navigatorToComplaint'>投诉订单 ></text>
+ 
+  </view>
+</view>

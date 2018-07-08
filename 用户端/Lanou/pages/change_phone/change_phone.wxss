@@ -1,0 +1,86 @@
+.bac{ 
+  position: absolute;
+  height: 100%;
+  width: 750rpx;
+  padding: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.container{
+  display: block;
+  height: 500rpx;
+  width: 720rpx;
+  margin: 18rpx auto;
+  border-radius: 5px; 
+  text-align: center;
+    background-color: white;
+}
+.phone{
+  position: absolute;
+  display: block;
+  top: 50rpx;
+  left: 40rpx;
+  font-size: 32rpx;
+  margin-left:30rpx;
+}
+.box{
+  display: block;
+  height: 380rpx;
+  width: 680rpx;
+  margin: -100rpx auto;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+.new{
+  display: block;
+  width: 620rpx;
+  height: 60rpx;
+  padding:10rpx 0 0 16rpx;
+  margin: 20rpx auto;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 32rpx;
+  border: 1px solid #bbbbbb;
+  color: #707070
+}
+.code{
+  display: block;
+  float: left;
+  height: 60rpx;
+  width: 423rpx;
+  padding:10rpx 0 0 16rpx;
+  margin: 10rpx 0 0 20rpx;
+  text-align: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+  color:  #707070
+}
+.obt{
+  display: block;
+  float: left;
+  margin: 10rpx auto;
+  height: 58rpx;
+  width: 200rpx;
+  padding:16rpx 0 0 0;
+  font-size: 28rpx;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #2dcb70; 
+  color: white
+}
+.but{
+  display: block;
+  width: 680rpx;
+  height: 64rpx;
+  text-align: center;
+  font-size: 32rpx;
+  margin: -108rpx auto 0 auto;
+  padding: 18rpx 0 0 0;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: white
+}
